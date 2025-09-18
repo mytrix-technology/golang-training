@@ -3,7 +3,7 @@ package main
 import (
 	"database/sql"
 	"github.com/dotse/go-health"
-	"github.com/dotse/go-health/client"
+	//client "github.com/dotse/go-health"
 	"os"
 )
 
@@ -30,7 +30,8 @@ func (app *MyApplication) CheckHealth() []health.Check {
 
 func main() {
 	if os.Args[1] == "healthcheck" {
-		client.CheckHealthCommand()
+		//client.CheckHealth()
+		//client.CheckHealthCommand()
 	}
 
 	//app := NewMyApplication()

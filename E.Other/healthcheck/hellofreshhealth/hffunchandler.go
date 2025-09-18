@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	"github.com/hellofresh/health-go/v5"
 	healthMysql "github.com/hellofresh/health-go/v5/checks/mysql"
 )
@@ -43,5 +43,8 @@ func main() { //nolint:typecheck
 
 	r := chi.NewRouter()
 	r.Get("/status", h.HandlerFunc)
-	http.ListenAndServe(":3000", nil)
+	err := http.ListenAndServe(":3000", nil)
+	if err != nil {
+		return
+	}
 }
