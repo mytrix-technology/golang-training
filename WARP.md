@@ -1,4 +1,6 @@
-# README.md
+# WARP.md
+
+This file provides guidance to WARP (warp.dev) when working with code in this repository.
 
 ## Repository Overview
 
@@ -9,29 +11,29 @@ This is a comprehensive Go training repository organized into structured learnin
 The repository follows a hierarchical learning structure:
 
 - **A.Basic/**: Foundational Go concepts organized into 9 training modules
-    - training1: Syntax basics (variables, data types, operators)
-    - training2: Control structures (arrays, slices, maps, loops, branching)
-    - training3: Object-oriented concepts (functions, methods, interfaces, pointers, reflection)
-    - training4: Concurrency (goroutines, channels, contexts)
-    - training5: Standard library utilities (strings, time, random)
-    - training6: System programming (files, CLI, regex, hashing)
-    - training7: Web development (HTTP, JSON, APIs)
-    - training8: Data persistence (SQL, MongoDB, unit testing)
-    - training9: Advanced patterns (concurrency pipelines, generics, mutexes)
+  - training1: Syntax basics (variables, data types, operators)
+  - training2: Control structures (arrays, slices, maps, loops, branching)
+  - training3: Object-oriented concepts (functions, methods, interfaces, pointers, reflection)
+  - training4: Concurrency (goroutines, channels, contexts)
+  - training5: Standard library utilities (strings, time, random)
+  - training6: System programming (files, CLI, regex, hashing)
+  - training7: Web development (HTTP, JSON, APIs)
+  - training8: Data persistence (SQL, MongoDB, unit testing)
+  - training9: Advanced patterns (concurrency pipelines, generics, mutexes)
 
 - **B.Intermediate/**: Currently empty, planned for intermediate concepts
 - **C.Advanced/**: Currently empty, planned for advanced topics
 - **D.Expert/**: Advanced implementations
-    - AI/ML integrations (Model Context Protocol, LangChain)
-    - Blockchain (P2P networks)
-    - Machine learning and data science modules
+  - AI/ML integrations (Model Context Protocol, LangChain)
+  - Blockchain (P2P networks)
+  - Machine learning and data science modules
 
 - **E.Other/**: Specialized topics and examples
-    - Performance benchmarking and optimization
-    - One Billion Row Challenge implementations
-    - Health check patterns
-    - Error handling patterns
-    - Profile-guided optimization
+  - Performance benchmarking and optimization
+  - One Billion Row Challenge implementations
+  - Health check patterns
+  - Error handling patterns
+  - Profile-guided optimization
 
 ## Common Development Tasks
 

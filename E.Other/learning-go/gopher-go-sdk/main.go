@@ -4,28 +4,25 @@ import (
 	"context"
 	"fmt"
 	"os"
-
-	gopherssdk "github.com/mytrix-technology/golang-training/E.Other/learning-go/gopher-go-sdk"
 )
 
 func main() {
-	config := gopherssdk.NewConfiguration()
-	client := gopherssdk.NewAPIClient(config)
+	config := NewConfiguration()
+	client := NewAPIClient(config)
 
 	// Check Health
 	// When we call GophersApi.CheckHealth method, it return a string
 	// equals to OK if the Gophers API is running and healthy
 
-	health, healthRes, healthErr := client.GophersApi.CheckHealth(context.Background()).Execute()
+	health, healthRes, healthErr := client.GophersAPI.CheckHealth(context.Background()).Execute()
 	if healthErr != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `GophersApi.CheckHealth``: %v\n", healthErr)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", healthRes)
 	}
 	// response from `CheckHealth`: string
 	fmt.Fprintf(os.Stdout, "Response from `GophersApi.CheckHealth`: %v\n", health)
-
 	// Get Gophers
-	gophers, gophersRes, GophersErr := client.GophersApi.GophersGet(context.Background()).Execute()
+	gophers, gophersRes, GophersErr := client.GophersAPI.GophersGet(context.Background()).Execute()
 	if GophersErr != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `GophersApi.GophersGet``: %v\n", GophersErr)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", gophersRes)

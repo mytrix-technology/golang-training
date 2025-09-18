@@ -1,0 +1,50 @@
+package main
+
+import (
+	"context"
+	"net/http"
+	"time"
+
+	"github.com/go-chi/chi/v5"
+	"github.com/hellofresh/health-go/v5"
+	healthMysql "github.com/hellofresh/health-go/v5/checks/mysql"
+)
+
+func main() { //nolint:typecheck
+	// add some checks on instance creation
+	h, _ := health.New(health.WithComponent(health.Component{
+		Name:    "myservice",
+		Version: "v1.0",
+	}), health.WithChecks(health.Config{
+		Name:      "rabbitmq",
+		Timeout:   time.Second * 5,
+		SkipOnErr: true,
+		Check: func(ctx context.Context) error {
+			// rabbitmq health check implementation goes here
+			return nil
+		}}, health.Config{
+		Name: "mongodb",
+		Check: func(ctx context.Context) error {
+			// mongo_db health check implementation goes here
+			return nil
+		},
+	},
+	))
+
+	// and then add some more if needed
+	h.Register(health.Config{
+		Name:      "mysql",
+		Timeout:   time.Second * 2,
+		SkipOnErr: false,
+		Check: healthMysql.New(healthMysql.Config{
+			DSN: "test:test@tcp(0.0.0.0:31726)/test?charset=utf8",
+		}),
+	})
+
+	r := chi.NewRouter()
+	r.Get("/status", h.HandlerFunc)
+	err := http.ListenAndServe(":3000", nil)
+	if err != nil {
+		return
+	}
+}
