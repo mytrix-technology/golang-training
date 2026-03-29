@@ -37,7 +37,7 @@ require (
 	golang.org/x/crypto v0.49.0
 	golang.org/x/exp v0.0.0-20260312153236-7ab1446f8b90
 	golang.org/x/net v0.52.0
-	google.golang.org/grpc v1.79.2
+	google.golang.org/grpc v1.79.3
 	tinygo.org/x/tinydraw v0.4.0
 	tinygo.org/x/tinyfont v0.6.0
 )
@@ -54,10 +54,10 @@ require (
 	github.com/anmitsu/go-shlex v0.0.0-20200514113438-38f4b401e2be // indirect
 	github.com/bahlo/generic-list-go v0.2.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/buger/jsonparser v1.1.1 // indirect
+	github.com/buger/jsonparser v1.1.2 // indirect
 	github.com/bytedance/gopkg v0.1.4 // indirect
 	github.com/bytedance/sonic v1.15.0 // indirect
-	github.com/bytedance/sonic/loader v0.5.0 // indirect
+	github.com/bytedance/sonic/loader v0.5.1 // indirect
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/cloudwego/base64x v0.1.6 // indirect
@@ -73,7 +73,7 @@ require (
 	github.com/fyne-io/image v0.1.1 // indirect
 	github.com/fyne-io/oksvg v0.2.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.13 // indirect
-	github.com/gin-contrib/sse v1.1.0 // indirect
+	github.com/gin-contrib/sse v1.1.1 // indirect
 	github.com/go-errors/errors v1.5.1 // indirect
 	github.com/go-gl/gl v0.0.0-20231021071112-07e5d0ea2e71 // indirect
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20250301202403-da16c1255728 // indirect
@@ -82,7 +82,7 @@ require (
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-ole/go-ole v1.3.0 // indirect
-	github.com/go-openapi/analysis v0.24.3 // indirect
+	github.com/go-openapi/analysis v0.25.0 // indirect
 	github.com/go-openapi/jsonpointer v0.22.5 // indirect
 	github.com/go-openapi/jsonreference v0.21.5 // indirect
 	github.com/go-openapi/swag/cmdutils v0.25.5 // indirect
@@ -122,7 +122,7 @@ require (
 	github.com/jsummers/gobmp v0.0.0-20230614200233-a9de23ed2e25 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
-	github.com/lufia/plan9stats v0.0.0-20260216142805-b3301c5f2a88 // indirect
+	github.com/lufia/plan9stats v0.0.0-20260324052639-156f7da3f749 // indirect
 	github.com/mailru/easyjson v0.9.2 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
@@ -134,7 +134,7 @@ require (
 	github.com/nicksnyder/go-i18n/v2 v2.6.1 // indirect
 	github.com/nikolalohinski/gonja v1.5.3 // indirect
 	github.com/oklog/ulid/v2 v2.1.1 // indirect
-	github.com/pelletier/go-toml/v2 v2.2.4 // indirect
+	github.com/pelletier/go-toml/v2 v2.3.0 // indirect
 	github.com/pkoukk/tiktoken-go v0.1.8 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/power-devops/perfstat v0.0.0-20240221224432-82ca36839d55 // indirect
@@ -163,7 +163,7 @@ require (
 	github.com/ugorji/go/codec v1.3.1 // indirect
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/yargevad/filepathx v1.0.0 // indirect
-	github.com/yuin/goldmark v1.7.16 // indirect
+	github.com/yuin/goldmark v1.8.2 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	gitlab.com/biffen/saute v0.0.4 // indirect
 	go.mongodb.org/mongo-driver/v2 v2.5.0 // indirect
@@ -199,13 +199,13 @@ require (
 	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/arch v0.25.0 // indirect
-	golang.org/x/image v0.37.0 // indirect
+	golang.org/x/image v0.38.0 // indirect
 	golang.org/x/sync v0.20.0 // indirect
 	golang.org/x/sys v0.42.0 // indirect
 	golang.org/x/term v0.41.0 // indirect
 	golang.org/x/text v0.35.0 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20260316180232-0b37fe3546d5 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260316180232-0b37fe3546d5 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20260319201613-d00831a3d3e7 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260319201613-d00831a3d3e7 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.3.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
